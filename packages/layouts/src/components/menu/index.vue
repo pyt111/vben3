@@ -27,7 +27,8 @@ const props = defineProps({
   },
 })
 
-const { Logo, useAppConfig, useMenuSetting } = context
+const { Logo, useAppConfig, useMenuSetting, useAppInject } = context
+const { getIsMobile } = useAppInject();
 
 const {
   menu,
